@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 540px;
+    margin: 20px;
+}
+
+.check {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.check input {
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+
+.header-top-full {
+    width: 540px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.center-icon {
+    width: 104px;
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-full a {
+    display: flex;
+    width: 28px;
+    height: 28px;
+}
+
+.close {
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+}
+
+/* SECTION  */
+.section-files {
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    margin: 0 20px 20px 0;
+}
+
+.row div:nth-of-type(2) {
+    margin: 0 20px;
+}
+
+.file {
+    height: 202px;
+    width: 155px;
+    padding: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    transition: border 0.3s ease-in-out;
+}
+
+.button {
+    margin: 8px auto;
+    display: flex;
+    height: 32px;
+    width: 123px;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.file:hover .button,
+.file:hover .download-button {
+    visibility: visible;
+    opacity: 2;
+}
+
+.button button {
+    border: none;
+    background-color: inherit;
+}
+
+.file:hover {
+    border: 2px solid rgba(0, 0, 0, 0.56);
+}
+
+.download-button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin: 10px auto;
+    border: none;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.file .icon {
+    display: flex;
+    margin: 10px auto 0;
+}
+
+.file p {
+    width: 123px;
+    margin: 10px auto 0;
+    line-height: 144%;
+}
+
+.scroll {
+    padding-right: 10px;
+    height: 744px;
+    overflow-y: scroll;
+}
